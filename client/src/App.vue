@@ -1,28 +1,55 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="html">
+
+    <div class="app-main-container">
+
+      <new-spooky-place-form></new-spooky-place-form>
+      <spooky-places-list v-bind:spooky_places="spookyPlaces"></spooky-places-list>
+
+
+    </div>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SpookyServices from './services/SpookyServices.js'
+import SpookyPlacesList from './components/SpookyPlacesList.vue'
+import NewSpookyPlaceForm from './components/NewSpookyPlaceForm.vue'
+import { eventBus } from './main';
+// import SpookyPlacesListItem from './components/SpookyPlacesListItem.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
+  data() {
+    return {
+      spookyPlaces: []
+    }
+  },
+  methods: {
+    fetchSpookyPlaces() {
+      SpookyServices.getSpookyPlaces()
+      .then(places => this.spookyPlaces = places);
+    }
+  },
+
   components: {
-    HelloWorld
+    'spooky-places-list': SpookyPlacesList,
+    'new-spooky-place-form': NewSpookyPlaceForm
+    // 'spooky-places-list-item': SpookyPlacesListItem
+  },
+
+  mounted() {
+    this.fetchSpookyPlaces();
+
+    eventBus.$on('spooky-place-added', (spookyPlaceRes) => {
+      this.spookyPlaces.push(spookyPlaceRes)
+    })
+
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang="css" scoped>
+
 </style>
