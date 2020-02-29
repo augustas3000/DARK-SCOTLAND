@@ -45,6 +45,18 @@ export default {
       this.spookyPlaces.push(spookyPlaceRes)
     })
 
+    eventBus.$on('spooky-place-deleted', (id) => {
+    let index = this.spookyPlaces.findIndex(spookyPlace => spookyPlace._id === id)
+    this.spookyPlaces.splice(index, 1)
+    })
+
+    // spooky place updated event listener:
+    // spooky-place-updated
+    eventBus.$on('spooky-place-updated', (updatedPlace) => {
+    let index = this.spookyPlaces.findIndex(place => updatedPlace._id === place._id)
+    this.spookyPlaces.splice(index, 1, updatedPlace)
+  })
+
   }
 }
 </script>

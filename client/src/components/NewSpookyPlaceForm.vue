@@ -1,5 +1,4 @@
-<template lang="html"
->
+<template lang="html">
   <form v-on:submit.prevent="addNewSpookyPlace" class="" method="post">
   <h2>Add a spooky place:</h2>
 

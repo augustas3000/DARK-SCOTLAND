@@ -21,7 +21,6 @@ deleteSpookyPlace(id){
   })
 },
 
-
 updateSpookyPlace(id, payload) {
   return fetch(baseURL + id, {
     method: 'PUT',
