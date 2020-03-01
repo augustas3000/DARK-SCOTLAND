@@ -1,11 +1,12 @@
 <template lang="html">
 
-  <li>
+  <li class="spooky-places-list-item">
     <spooky-place-update-form v-if="updFormShow" v-bind:spooky_place_upd="spooky_place"></spooky-place-update-form>
     <p>{{spooky_place.name}}</p>
     <button type="button" name="button">More info</button>
     <button v-on:click="updButtonClicked" type="button" name="button">Update</button>
     <button v-on:click="deletePlace" type="button" name="button">Delete</button>
+    <spooky-places-list-item-mini-map v-bind:spooky_place="spooky_place"></spooky-places-list-item-mini-map>
   </li>
 
 </template>
@@ -14,13 +15,14 @@
 import SpookyServices from '../services/SpookyServices.js'
 import { eventBus } from '../main.js';
 import SpookyPlaceUpdateForm from './SpookyPlaceUpdateForm.vue'
-
+import SpookyPlacesListItemMiniMap from './SpookyPlacesListItemMiniMap.vue'
 
 export default {
   name: "spooky-places-list-item",
   props: ['spooky_place'],
   components: {
-    "spooky-place-update-form": SpookyPlaceUpdateForm
+    "spooky-place-update-form": SpookyPlaceUpdateForm,
+    "spooky-places-list-item-mini-map": SpookyPlacesListItemMiniMap
   },
 
   data() {
@@ -49,5 +51,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+  .spooky-places-list-item {
+    min-height: 80px;
+    background-color: lightgreen;
+  }
 </style>

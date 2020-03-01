@@ -9,8 +9,8 @@
   </div>
 <!--  -->
   <div class="">
-    <label for="email">Location:</label>
-    <input v-model="location" type="text" name="" id="location">
+    <label for="email">Locality:</label>
+    <input v-model="locality" type="text" name="" id="locality">
   </div>
 
   <div class="">
@@ -49,7 +49,7 @@ export default {
     return {
       name: this.spooky_place_upd.name,
       nameOriginal: this.spooky_place_upd.name,
-      location: this.spooky_place_upd.location,
+      locality: this.spooky_place_upd.locality,
       description: this.spooky_place_upd.description,
       imgURL: this.spooky_place_upd.imgURL,
       price: this.spooky_place_upd.price
@@ -65,7 +65,7 @@ export default {
       // no db index yet
       const updatedPlaceObjNoId = {
         name: this.name,
-        location: this.location,
+        locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
         price: this.price

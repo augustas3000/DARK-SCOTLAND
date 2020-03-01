@@ -8,8 +8,8 @@
   </div>
 <!--  -->
   <div class="">
-    <label for="email">Location:</label>
-    <input v-model="location" type="text" name="" id="location">
+    <label for="email">Locality:</label>
+    <input v-model="locality" type="text" name="" id="locality">
   </div>
 
   <div class="">
@@ -44,7 +44,7 @@ export default {
   data() {
     return {
       name: "",
-      location: "",
+      locality: "",
       description: "",
       imgURL: "",
       price: null
@@ -54,10 +54,10 @@ export default {
     addNewSpookyPlace() {
       const newPlaceObj = {
         name: this.name,
-        location: this.location,
+        locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
-        price: this.price
+        price: parseFloat(this.price)
       }
 
       SpookyServices.postSpookyPlace(newPlaceObj)

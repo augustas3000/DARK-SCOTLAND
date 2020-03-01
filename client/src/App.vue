@@ -3,6 +3,10 @@
     <div class="app-main-container">
 
       <new-spooky-place-form></new-spooky-place-form>
+      <hr>
+        <h1>Spooky Filter</h1>
+        <spooky-places-filter v-bind:spooky_places="spookyPlaces"></spooky-places-filter>
+      <hr>
       <spooky-places-list v-bind:spooky_places="spookyPlaces"></spooky-places-list>
 
 
@@ -15,6 +19,7 @@
 import SpookyServices from './services/SpookyServices.js'
 import SpookyPlacesList from './components/SpookyPlacesList.vue'
 import NewSpookyPlaceForm from './components/NewSpookyPlaceForm.vue'
+import SpookyPlacesFilter from './components/SpookyPlacesFilter.vue'
 import { eventBus } from './main';
 // import SpookyPlacesListItem from './components/SpookyPlacesListItem.vue'
 
@@ -22,11 +27,13 @@ export default {
   name: 'app',
   data() {
     return {
-      spookyPlaces: []
+      spookyPlaces: [],
+      filtered: []
     }
   },
   methods: {
     fetchSpookyPlaces() {
+      // gonna use a different service to test filtering
       SpookyServices.getSpookyPlaces()
       .then(places => this.spookyPlaces = places);
     }
@@ -34,7 +41,8 @@ export default {
 
   components: {
     'spooky-places-list': SpookyPlacesList,
-    'new-spooky-place-form': NewSpookyPlaceForm
+    'new-spooky-place-form': NewSpookyPlaceForm,
+    'spooky-places-filter': SpookyPlacesFilter
     // 'spooky-places-list-item': SpookyPlacesListItem
   },
 
@@ -56,6 +64,11 @@ export default {
     let index = this.spookyPlaces.findIndex(place => updatedPlace._id === place._id)
     this.spookyPlaces.splice(index, 1, updatedPlace)
   })
+
+    eventBus.$on('filter-submited', (filteredPlaces) => {
+      // debugger;
+      this.spookyPlaces = filteredPlaces
+    })
 
   }
 }
