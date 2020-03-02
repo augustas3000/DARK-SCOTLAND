@@ -2,6 +2,8 @@
 
     <div class="app-main-container">
 
+      <navigation></navigation>
+
       <new-spooky-place-form></new-spooky-place-form>
       <hr>
         <h1>Spooky Filter</h1>
@@ -21,6 +23,8 @@ import SpookyPlacesList from './components/SpookyPlacesList.vue'
 import NewSpookyPlaceForm from './components/NewSpookyPlaceForm.vue'
 import SpookyPlacesFilter from './components/SpookyPlacesFilter.vue'
 import { eventBus } from './main';
+import Navigation from './components/Navigation.vue'
+// import HeaderComponent from './main/HeaderView.vue'
 // import SpookyPlacesListItem from './components/SpookyPlacesListItem.vue'
 
 export default {
@@ -42,7 +46,9 @@ export default {
   components: {
     'spooky-places-list': SpookyPlacesList,
     'new-spooky-place-form': NewSpookyPlaceForm,
-    'spooky-places-filter': SpookyPlacesFilter
+    'spooky-places-filter': SpookyPlacesFilter,
+    'navigation': Navigation
+    // 'header': Header
     // 'spooky-places-list-item': SpookyPlacesListItem
   },
 
@@ -76,5 +82,8 @@ export default {
 
 
 <style lang="css" scoped>
+
+
+
 
 </style>

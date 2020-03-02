@@ -1,11 +1,10 @@
 <template lang="html">
 
-  <form v-on:submit.prevent="filterSubmitted" class="" method="post">
+  <!-- <form v-on:submit.prevent="filterSubmitted" class="" method="post">
 
     <h2>Select price range</h2>
     <select v-model="priceRangeSelected" >
-      <!-- <option disabled value="">All</option> -->
-      
+
       <option v-for="(value, name, index) in priceRanges" v-bind:value="value" v-bind:key="index">£ {{name}} </option>
     </select>
 
@@ -14,7 +13,10 @@
     </select>
 
     <input type="submit" name="" value="Submit filter">
-  </form>
+  </form> -->
+
+
+
 
 </template>
 
