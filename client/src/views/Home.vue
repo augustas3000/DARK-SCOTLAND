@@ -1,7 +1,6 @@
 <template lang="html">
 
-    <div class="app-main-container">
-
+    <div class="home">
       <navigation></navigation>
 
       <new-spooky-place-form></new-spooky-place-form>
@@ -18,17 +17,15 @@
 </template>
 
 <script>
-import SpookyServices from '@/services/SpookyServices.js'
-import SpookyPlacesList from '@/components/SpookyPlacesList.vue'
-import NewSpookyPlaceForm from '@/components/NewSpookyPlaceForm.vue'
-import SpookyPlacesFilter from '@/components/SpookyPlacesFilter.vue'
+import SpookyServices from '@/services/SpookyServices.js';
+import SpookyPlacesList from '@/components/SpookyPlacesList.vue';
+import NewSpookyPlaceForm from '@/components/NewSpookyPlaceForm.vue';
+import SpookyPlacesFilter from '@/components/SpookyPlacesFilter.vue';
 import { eventBus } from '@/main';
-import Navigation from '@/components/Navigation.vue'
-// import HeaderComponent from './main/HeaderView.vue'
-// import SpookyPlacesListItem from './components/SpookyPlacesListItem.vue'
+import Navigation from '@/components/Navigation.vue';
 
 export default {
-  name: 'app',
+  name: 'home',
   data() {
     return {
       spookyPlaces: [],
@@ -48,8 +45,6 @@ export default {
     'new-spooky-place-form': NewSpookyPlaceForm,
     'spooky-places-filter': SpookyPlacesFilter,
     'navigation': Navigation
-    // 'header': Header
-    // 'spooky-places-list-item': SpookyPlacesListItem
   },
 
   mounted() {
@@ -64,7 +59,6 @@ export default {
     this.spookyPlaces.splice(index, 1)
     })
 
-    // spooky place updated event listener:
     // spooky-place-updated
     eventBus.$on('spooky-place-updated', (updatedPlace) => {
     let index = this.spookyPlaces.findIndex(place => updatedPlace._id === place._id)

@@ -1,13 +1,13 @@
 <template lang="html">
- <!-- <div class="">
+ <nav>
    <ul>
    <li><router-link :to="{ name: 'home'}">Home</router-link></li>
    <li><router-link :to="{ name: 'favourite-places'}">Favourite Places</router-link></li>
-   <li><router-link :to="{ name: 'add-new-place'}">Add a new place</router-link></li>
+   <li><router-link :to="{ name: 'add-a-new-place'}">Add a new place</router-link></li>
    <li><router-link :to="{ name: 'places-filter'}">Places Filter</router-link></li>
    </ul>
    <router-view id="view"></router-view>
- </div> -->
+ </nav>
 
 
 </template>

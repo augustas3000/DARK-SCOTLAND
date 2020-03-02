@@ -1,7 +1,7 @@
 <template lang="html">
-  <div id="favourite-places">
+  <div id="add-a-new-place">
     <navigation></navigation>
-    <h2>Favourite Places</h2>
+    <h2>Add a new place</h2>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import Navigation from '@/components/Navigation.vue';
 export default {
   components: {
-    name: 'favourite-places',
+    name: 'add-a-new-place',
     'navigation': Navigation
   }
 }
