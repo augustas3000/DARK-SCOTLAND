@@ -64,8 +64,8 @@ export default {
 },
 data() {
   return {
-    zoom: 7,
-    center: [this.spooky_place.location.lat, this.spooky_place.location.long],
+    zoom: 6,
+    center: latLng(56.859643, -4.192247),
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     attribution:
       '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>',
@@ -87,8 +87,8 @@ methods: {
   zoomUpdate(zoom) {
     this.currentZoom = zoom;
   },
-  centerUpdate(center) {
-    this.currentCenter = center;
+  centerUpdate() {
+    this.currentCenter = this.center;
   },
   showLongText() {
     this.showParagraph = !this.showParagraph;

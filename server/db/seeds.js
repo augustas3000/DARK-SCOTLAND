@@ -38,7 +38,7 @@ db.spookyPlaces.insertMany([
       },
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       imgURL: "https://www.visitscotland.com/wsimgs/Crathes_623569832.jpg",
-      price: 25.00
+      rating: 6
     },
     {
       name: "Mary King's Close",
@@ -49,7 +49,7 @@ db.spookyPlaces.insertMany([
       },
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       imgURL: "https://www.touristsecrets.com/wp-content/uploads/2019/07/3-18-1160x653.jpg",
-      price: 150.00
+      rating: 10
     },
     {
       name: "Cawdor Castle",
@@ -60,6 +60,6 @@ db.spookyPlaces.insertMany([
       },
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       imgURL: "https://spookyscotland.net/wp-content/uploads/2018/02/cawdor-castle.jpg",
-      price: 260.00
+      rating: 5
     }
 ]);
