@@ -39,6 +39,11 @@ export default {
       .then(() => eventBus.$emit('spooky-place-deleted', this.spooky_place._id))
     },
 
+    // moreInfoClick() {
+    //   SpookyServices.moreInfoSpookyPlace(this.spooky_place._id)
+    //   .then(() => eventBus.$emit('spooky-place-info', this.spooky_place._id))
+    // },
+
     updButtonClicked() {
       this.updFormShow = true
     },
