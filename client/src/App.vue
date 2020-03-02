@@ -1,5 +1,6 @@
 <template lang="html">
 
+
     <div class="app-main-container">
 
       <navigation></navigation>
@@ -10,9 +11,7 @@
         <!-- <spooky-places-filter v-bind:spooky_places="spookyPlaces"></spooky-places-filter> -->
       <hr>
       <spooky-places-list v-bind:spooky_places="spookyPlaces"></spooky-places-list>
-
-
-    </div>
+</div>
 
 
 </template>
@@ -82,7 +81,6 @@ export default {
 
 
 <style lang="css" scoped>
-
 
 
 

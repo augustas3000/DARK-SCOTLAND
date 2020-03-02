@@ -248,5 +248,115 @@ db.spookyPlaces.insertMany([
       description: "The brutal Glencoe, which took place on 13 February 1692, is one of the bloodiest incidents in Scotland’s history. The story goes that a troop of soldiers – acting on government orders – posed as friendly visitors before attacking their hosts, Clan Macdonald, while they lay sleeping in their beds, murdering 38 men, women and children. Other members of Clan Macdonald are reported to have fled to the surrounding mountains, but died of exposure in the bitterly cold mountain landscape. Nowadays people have claimed to see re-enactments of the slaughter, or have heard screams in the glen, particularly around the anniversary of the massacre.",
       imgURL: "https://www.visitscotland.com/blog/wp-content/uploads/2015/10/Glen-Coe-1200x800.jpg",
       rating: 9
+    },
+    {
+      name: "Edinburgh Castle",
+      locality: "Edinburgh",
+      location: {
+        lat: 55.948595,
+        long: -3.199913
+      },
+      description: "Perched high above the Scottish capital, world-famous Edinburgh Castle is thought to be one of the most haunted places in Scotland and there have been numerous reports of paranormal activity over the years. Former prisoners are said to haunt the dungeons and a headless drummer, first seen shortly before Oliver Cromwell attacked the castle in 1650, has also been spotted. Although many people have heard the sound of his drums coming from the battlements, his physical appearance is rare and is said to foretell danger for the castle.",
+      imgURL: "https://www.visitscotland.com/blog/wp-content/uploads/2015/10/Edinburgh-Castle-%C2%A9-Kenny-Lam-1200x800.jpg",
+      rating: 10
+    },
+    {
+      name: "Eilean Donan Castle",
+      locality: "Kyle of Lochalsh",
+      location: {
+        lat: 57.282607,
+        long: -5.714329
+      },
+      description: "One of the most photographed castles in Europe, if not in the world, Eilean Donan Castle near Kyle of Lochalsh is said to be haunted by a Spanish soldier who was killed in a siege in 1719 during the first Jacobite rebellion. The ghost of ‘Lady Mary’ has also been spotted in one of the castle’s bedrooms.",
+      imgURL: "https://www.visitscotland.com/blog/wp-content/uploads/2014/10/eilean-donan1.jpg",
+      rating: 8
+    },
+    {
+      name: "Meldrum House",
+      locality: "Edinburgh",
+      location: {
+        lat: 55.951208,
+        long: -3.212902
+      },
+      description: "This 13th century building is now a hotel where a number of male guests have been surprised by the ghost of Isabella Douglas. One man received a cold kiss on the cheek during a thunderstorm and others have reported a chilling feeling as she glides through them when unhappy. Beware any male descendant of the Meldrum, Seton or Urquhart families, who can expect to be awoken by the feeling of an invisible hand scratching his chest.",
+      imgURL: "https://wpcluster.dctdigital.com/scottishfield/wp-content/uploads/sites/101/2014/09/Meldrum-2-web.jpg",
+      rating: 7
+    },
+    {
+      name: "Glamis Castle",
+      locality: "Forfar",
+      location: {
+        lat: 56.620154,
+        long: -3.00167
+      },
+      description: "This 15th century castle is the setting for Shakespeare’s Macbeth and is without doubt one of the most haunted buildings in the UK, with frequent sightings of the Grey Lady, Jack the Runner, the White Lady, the bloodymouthed ghost and Earl Beardie. Whether or not you manage to glimpse one of these paranormal beings, you will certainly feel their presence as you tour the castle.",
+      imgURL: "https://wpcluster.dctdigital.com/scottishfield/wp-content/uploads/sites/101/2016/10/Glamis_castle-978x624.jpg",
+      rating: 10
+    },
+    {
+      name: "Greyfriars Kirkyard",
+      locality: "Edinburgh",
+      location: {
+        lat: 55.947168,
+        long: -3.192796
+      },
+      description: "Described as ‘one of the scariest places on earth’ and ‘Scotland’s most haunted cemetery’, Greyfriars Kirkyard isn’t just the place famous for Greyfriars Bobby, Edinburgh’s beloved canine. This ancient resting place also contains the Covenanters Prison and the tombstone of Thomas Riddell Esquire, the inspiration for Voldemort’s real name in Harry Potter. Disturbingly, it’s a site rife with a robbery past and home to myriad spirits. Perhaps the most irking of all is the Mackenzie Poltergeist, the benevolent spirit of Sir George MacKenzie who has left people on ghost tours passed out, scratched, bruised and severely shaken.",
+      imgURL: "https://img.theculturetrip.com/1440x960/smart/wp-content/uploads/2018/12/egg1jf.jpg",
+      rating: 10
+    },
+    {
+      name: "Southern Necropolis",
+      locality: "Glasgow",
+      location: {
+        lat: 55.843658,
+        long: -4.244156
+      },
+      description: "The massive Glasgow cemetery, with its quarter million residents, is said to be the lair of a 7ft child-eating vampire with metal teeth. The story is so strong that in 1954, hundreds of children aged between four and fourteen came to the cemetery armed with sticks and knives, looking to kill the beast that had apparently eaten two local boys.",
+      imgURL: "http://www.discoverglasgow.org/communities/9/004/011/018/389//images/4596698125_480x320.jpg",
+      rating: 6
+    },
+    {
+      name: "Goblin Ha",
+      locality: "Gifford",
+      location: {
+        lat: 55.901455,
+        long: -2.739057
+      },
+      description: "Yester Castle, or Goblin Ha (Goblin hall), near Gifford in East Lothian is an underground system of corridors and gothic vaults sunk beneath an ancient ruin. Its story is even more impressive. Back in the 13th century, Sir Hugo de Gifford, a local warlock, made a deal with the devil, summoned an army of goblins and demanded they build him the hall. Once finished, the necromancer spent the rest of his years practicing sorcery and Satanism in the underground vault. A vault which you can still visit today, armed with a torch and nerves of steel.",
+      imgURL: "http://www.stravaiging.com/photos/albums/buildings/castles/Yester%20Castle,%20East%20Lothian/IMG_4108.JPG",
+      rating: 6
+    },
+    {
+      name: "The Forest of Rothiemurchus",
+      locality: "Aviemore",
+      location: {
+        lat: 57.176227,
+        long: -3.817418
+      },
+      description: "This dark wood in Inverness-shire is home to the grave of the Chief of Clan Shaw, whose spirit is said to challenge those who stray too deep into the forest (scroll down to 'Four Legged Man'). Accept the challenge, the legend goes, and the spirit will leave you be, but be cowardly and run, and you will never be seen again. Goblins, elves and other creatures of the night will also make any journey into the forest an uncomfortable one.",
+      imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/RothiemurchusForest.jpg/1024px-RothiemurchusForest.jpg",
+      rating: 6
+    },
+    {
+      name: "The A75, Dumfries and Galloway",
+      locality: "Dumfires and Galloway",
+      location: {
+        lat: 55.070629,
+        long: -3.604998
+      },
+      description: "It’s not just buildings and cemeteries that are accused of housing the restless spirits of the dead. The 15-mile stretch of the A75 between Annan and Gretna Green is reported to be one of the most haunted roads in Scotland, so much so that some locals refuse to drive down it in the dark. Mysterious mist, a Victorian woman and an old man are said to appear in the road, causing near accidents as drivers try to avoid them.",
+      imgURL: "https://ichef.bbci.co.uk/news/1024/media/images/70684000/jpg/_70684321_kinmountstraight.jpg",
+      rating: 8
+    },
+    {
+      name: "The Ragged School",
+      locality: "Edinburgh",
+      location: {
+        lat: 55.948914,
+        long: -3.196296
+      },
+      description: "Established in the 1800s the ragged school was a grim education establishment for 50 of the city’s poorest and most deprived children. It’s been derelict for years, and reports of the sound of children running around and an air of sickness give this grim location an uneasy edge.",
+      imgURL: "http://2.bp.blogspot.com/-He1xnU0Qb1o/UXUjxD6nkCI/AAAAAAAABck/nXwV9An8UzA/s1600/20130418_084326.jpg",
+      rating: 7
     }
 ]);

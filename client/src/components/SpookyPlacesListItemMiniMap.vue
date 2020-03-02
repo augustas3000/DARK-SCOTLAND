@@ -18,7 +18,9 @@
   <l-marker :lat-lng="[spooky_place.location.lat, spooky_place.location.long]">
     <l-popup>
       <div >
-        <p>hello</p>
+        <p>Name: {{spooky_place.name}}</p>
+        <p>Locality: {{spooky_place.locality}}</p>
+        <p>Spooky Rating: {{spooky_place.rating}}</p>
         <!-- <p>Name: {{munro.name}}</p>
         <hr>
         <p>Height: {{munro.height}}m</p>
