@@ -7,7 +7,7 @@
       <new-spooky-place-form></new-spooky-place-form>
       <hr>
         <h1>Spooky Filter</h1>
-        <spooky-places-filter v-bind:spooky_places="spookyPlaces"></spooky-places-filter>
+        <!-- <spooky-places-filter v-bind:spooky_places="spookyPlaces"></spooky-places-filter> -->
       <hr>
       <spooky-places-list v-bind:spooky_places="spookyPlaces"></spooky-places-list>
 
