@@ -30,6 +30,7 @@ export default {
     /* position: fixed; */
     top: 1rem;
     width: 93%;
+    z-index: 10;
     /* height: 30rem; */
     /* padding-bottom: 10rem; */
   }

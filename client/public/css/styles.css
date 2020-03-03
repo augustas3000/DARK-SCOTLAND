@@ -13,6 +13,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Verdana, Arial, sans-serif;
   font-weight: 400;

@@ -1,5 +1,6 @@
 <template lang="html">
 
+
   <li class="spooky-places-list-item">
     <spooky-place-update-form v-if="updFormShow" v-bind:spooky_place_upd="spooky_place"></spooky-place-update-form>
 
@@ -54,7 +55,9 @@ export default {
     },
 
     moreInfo() {
+      // window.scrollTo(0,0);
       eventBus.$emit('show-more-info', this.spooky_place)
+
     }
   },
 

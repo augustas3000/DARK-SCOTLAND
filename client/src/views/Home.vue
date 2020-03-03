@@ -2,7 +2,10 @@
 
     <div id="home">
       <navigation class="navigation-bar"></navigation>
+
       <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
+
+
       <spooky-places-list v-if="spookyPlaces" v-bind:spooky_places="spookyPlaces"></spooky-places-list>
     </div>
 
@@ -58,6 +61,10 @@ export default {
 
     eventBus.$on('show-more-info', (chosenPlace) => {
       this.chosenPlace = chosenPlace
+    })
+
+    eventBus.$on('close-more-info', () => {
+      this.chosenPlace = null;
     })
 
   }
