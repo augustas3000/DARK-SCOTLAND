@@ -1,7 +1,9 @@
 <template lang="html">
   <div id="favourite-places">
-    <navigation></navigation>
-    <h2>Favourite Places</h2>
+    <navigation class="navigation-bar"></navigation>
+    <div class="fav-palces-info">
+      <h1>Favourite spooky places</h1>
+    </div>
   </div>
 </template>
 
@@ -16,4 +18,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+  #favourite-places {
+   padding-top: 6rem;
+  }
+
 </style>

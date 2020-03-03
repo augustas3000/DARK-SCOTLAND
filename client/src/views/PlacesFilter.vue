@@ -1,10 +1,9 @@
 <template lang="html">
   <div id="places-filter">
-    <navigation></navigation>
-    <h2>Places Filter</h2>
+    <navigation class="navigation-bar"></navigation>
     <h1>Spooky Filter</h1>
     <spooky-places-filter v-bind:spooky_places="foundPlaces"></spooky-places-filter>
-    <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place="chosenPlace"></spooky-list-item-details>
+    <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
     <spooky-places-list v-if="foundPlaces" v-bind:spooky_places="foundPlaces"></spooky-places-list>
     <spooky-places-list v-else-if="spookyPlacesSorted" v-bind:spooky_places="spookyPlacesSorted"></spooky-places-list>
   </div>
@@ -29,7 +28,8 @@ export default {
     name: 'places-filter',
     'navigation': Navigation,
     'spooky-places-filter': SpookyPlacesFilter,
-    'spooky-places-list': SpookyPlacesList
+    'spooky-places-list': SpookyPlacesList,
+    'spooky-list-item-details': SpookyListItemDetails
   },
   methods: {
     fetchSpookyPlaces() {
@@ -91,9 +91,16 @@ export default {
     this.foundPlaces.splice(index, 1, updatedPlace)
     })
 
+    eventBus.$on('show-more-info', (chosenPlace) => {
+      this.chosenPlace = chosenPlace
+    })
+
   }
 }
 </script>
 
 <style lang="css" scoped>
+  #places-filter {
+    padding-top: 6rem;
+  }
 </style>

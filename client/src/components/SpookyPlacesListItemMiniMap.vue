@@ -129,8 +129,9 @@ methods: {
 
 <style lang="css" scoped>
   .map {
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 40rem;
+    z-index: 0
   }
 
 </style>

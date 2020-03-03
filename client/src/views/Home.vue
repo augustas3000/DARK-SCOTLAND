@@ -1,7 +1,11 @@
 <template lang="html">
 
     <div id="home">
-      <navigation></navigation>
+      <navigation class="navigation-bar"></navigation>
+      <h1>Spooky places</h1>
+      <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
+
+
       <spooky-places-list v-if="spookyPlaces" v-bind:spooky_places="spookyPlaces"></spooky-places-list>
     </div>
 
@@ -59,10 +63,16 @@ export default {
       this.chosenPlace = chosenPlace
     })
 
+    eventBus.$on('close-more-info', () => {
+      this.chosenPlace = null;
+    })
+
   }
 }
 </script>
 
 <style lang="css" scoped>
-
+  #home {
+    padding-top: 6rem;
+  }
 </style>

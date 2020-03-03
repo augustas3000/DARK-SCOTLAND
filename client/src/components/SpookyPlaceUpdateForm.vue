@@ -1,7 +1,7 @@
 <template lang="html">
 
-  <form v-on:submit.prevent="updateAndSave" class="" method="post">
-  <h2>Update form for: {{nameOriginal}}</h2>
+  <form v-on:submit.prevent="updateAndSave" class="spooky-update-form" method="post">
+  <h3>Update</h3>
 
   <div class="">
     <label for="name">Name:</label>
@@ -31,8 +31,11 @@
     <input v-model="rating" type="number" name="" id="rating">
   </div>
 
-<input type="submit" name="" value="Save and Update">
-<button v-on:click="closeUpdateForm" type="button" name="button">Cancel</button>
+  <div class="button-box">
+    <input class="button" type="submit" name="" value="Update">
+    <button class="button" v-on:click="closeUpdateForm" type="button" name="button">Cancel</button>
+  </div>
+
 
 </form>
 
@@ -86,4 +89,28 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.spooky-update-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 3rem;
+  background-color: white;
+}
+.button-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 10rem;
+}
 </style>
