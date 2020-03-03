@@ -2,7 +2,7 @@
 
     <div id="home">
       <navigation class="navigation-bar"></navigation>
-
+      <h1>Spooky places</h1>
       <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
 
 
@@ -72,5 +72,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+  #home {
+    padding-top: 6rem;
+  }
 </style>

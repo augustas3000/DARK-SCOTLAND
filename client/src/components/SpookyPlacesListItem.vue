@@ -79,6 +79,7 @@ export default {
     font-weight: bold;
     text-align: center;
     padding: 2rem;
+    position: relative;
   }
 
   .rating {
@@ -98,11 +99,8 @@ export default {
   padding: 1rem 1rem;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   font-size: 1.2rem;
   width: 10rem;
-  /* margin-right: 0.5rem;
-  margin-bottom: 0.5rem; */
   }
 
 

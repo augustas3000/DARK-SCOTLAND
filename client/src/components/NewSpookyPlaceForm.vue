@@ -1,6 +1,6 @@
 <template lang="html">
   <form v-on:submit.prevent="addNewSpookyPlace" class="" method="post">
-  <h2>Add a spooky place:</h2>
+  
 
   <div class="">
     <label for="name">Name:</label>
@@ -51,7 +51,7 @@ export default {
     }
   },
   methods: {
-    
+
     addNewSpookyPlace() {
 
       const newPlaceObj = {

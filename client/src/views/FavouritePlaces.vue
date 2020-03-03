@@ -2,7 +2,7 @@
   <div id="favourite-places">
     <navigation class="navigation-bar"></navigation>
     <div class="fav-palces-info">
-      <h2>Favourite Places</h2>
+      <h1>Favourite spooky places</h1>
     </div>
   </div>
 </template>
@@ -19,8 +19,8 @@ export default {
 
 <style lang="css" scoped>
 
-  .fav-places-info {
-    /* margin-top: 8rem; */
+  #favourite-places {
+   padding-top: 6rem;
   }
 
 </style>

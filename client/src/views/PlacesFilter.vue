@@ -1,7 +1,6 @@
 <template lang="html">
   <div id="places-filter">
     <navigation class="navigation-bar"></navigation>
-    <h2>Places Filter</h2>
     <h1>Spooky Filter</h1>
     <spooky-places-filter v-bind:spooky_places="foundPlaces"></spooky-places-filter>
     <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
@@ -101,4 +100,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  #places-filter {
+    padding-top: 6rem;
+  }
 </style>

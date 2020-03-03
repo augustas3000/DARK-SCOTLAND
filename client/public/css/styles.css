@@ -36,11 +36,18 @@ body {
 
 }
 
+input {
+  font-size: 1.6rem;
+}
+
 
 #app {
   padding: 10px;
 }
 
+h1 {
+  font-size: 3rem;
+}
 /* ul#spooky-places-list {
   padding: 0;
   list-style: none;

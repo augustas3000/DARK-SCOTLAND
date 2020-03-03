@@ -2,7 +2,7 @@
   <div id="add-a-new-place">
     <navigation class="navigation-bar"></navigation>
     <div class="add-a-new-place-container">
-      <h2>Add a new place</h2>
+      <h1>Add a new spooky place</h1>
       <new-spooky-place-form></new-spooky-place-form>
 
       <!-- animation -->
