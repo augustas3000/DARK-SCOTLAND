@@ -21,14 +21,6 @@
         <p>Name: {{spooky_place.name}}</p>
         <p>Locality: {{spooky_place.locality}}</p>
         <p>Spooky Rating: {{spooky_place.rating}}</p>
-        <!-- <p>Name: {{munro.name}}</p>
-        <hr>
-        <p>Height: {{munro.height}}m</p>
-        <p>Region: {{munro.region}}</p>
-        <p>Grid Ref: {{munro.gridref_letters}} {{munro.gridref_eastings}} {{munro.gridref_northings}}</p>
-        <hr>
-        <button v-on:click="handleClickAddFav(index)" type="button" name="button">Add to favorites</button>
-        <button v-on:click="showDetails(munro)" type="button" name="button">Show details</button> -->
       </div>
     </l-popup>
   </l-marker>

@@ -51,7 +51,9 @@ export default {
     }
   },
   methods: {
+    
     addNewSpookyPlace() {
+
       const newPlaceObj = {
         name: this.name,
         locality: this.locality,
@@ -61,7 +63,9 @@ export default {
       }
 
       SpookyServices.postSpookyPlace(newPlaceObj)
-      .then(spookyPlaceRes => eventBus.$emit('spooky-place-added', spookyPlaceRes))
+      .then(spookyPlaceRes => eventBus.$emit('spooky-place-added', spookyPlaceRes));
+
+      this.$router.push("/");
 
     }
   }

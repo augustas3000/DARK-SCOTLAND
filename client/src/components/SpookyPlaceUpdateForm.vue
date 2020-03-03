@@ -7,7 +7,7 @@
     <label for="name">Name:</label>
     <input v-model="name" type="text" name="" id="name">
   </div>
-<!--  -->
+
   <div class="">
     <label for="email">Locality:</label>
     <input v-model="locality" type="text" name="" id="locality">
