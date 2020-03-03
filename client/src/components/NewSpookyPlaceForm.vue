@@ -1,6 +1,5 @@
 <template lang="html">
-  <form v-on:submit.prevent="addNewSpookyPlace" class="" method="post">
-  <h2>Add a spooky place:</h2>
+  <form id="spooky-places-form" v-on:submit.prevent="addNewSpookyPlace" class="form-inline" method="post">
 
   <div class="">
     <label for="name">Name:</label>
@@ -31,6 +30,22 @@
   </div>
 
 <input type="submit" name="" value="Add">
+
+<div class="ghost">
+  <div class="ghost_head">
+    <div class="ghost_left_eye ghost_eye"> </div>
+    <div class="ghost_smile"></div>
+    <div class="ghost_right_eye ghost_eye"></div>
+  </div>
+  <div class="ghost_bottom">
+    <div class="ghost_floaty" id = "ghost_floaty_1"></div>
+    <div class="ghost_floaty" id = "ghost_floaty_2"></div>
+    <div class="ghost_floaty" id = "ghost_floaty_3"></div>
+    <div class="ghost_floaty" id = "ghost_floaty_4"></div>
+    <div class="ghost_floaty" id = "ghost_floaty_5"></div>
+  </div>
+</div>
+
 </form>
 
 </template>
@@ -51,7 +66,7 @@ export default {
     }
   },
   methods: {
-    
+
     addNewSpookyPlace() {
 
       const newPlaceObj = {
