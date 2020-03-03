@@ -60,6 +60,7 @@ export default {
   background-size: cover;
 
   background-position: center;
+  z-index: 2;
 
 }
 
