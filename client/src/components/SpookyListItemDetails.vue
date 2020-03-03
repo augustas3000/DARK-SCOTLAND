@@ -4,7 +4,7 @@
       <h1>{{chosen_place.name}}</h1>
       <h2>{{chosen_place.locality}}</h2>
 
-       <a v-on:click="closeMoreInfo" href="#" class="close"></a>
+       <a v-on:click.stop.prevent="closeMoreInfo" href="#" class="close"></a>
 
       <div class="map-and-image-box">
         <spooky-places-list-item-mini-map v-bind:spooky_place="chosen_place"></spooky-places-list-item-mini-map>
@@ -61,9 +61,7 @@ export default {
 
   background-position: center;
   z-index: 2;
-
 }
-
 
 .map-and-image-box {
   display: flex;

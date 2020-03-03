@@ -42,9 +42,9 @@ export default {
 
 <style lang="css" scoped>
 
-  .add-a-new-place-container {
-    padding-top: 6rem;
-  }
+#add-a-new-place {
+  padding-top: 6rem;
+}
 
 
 </style>

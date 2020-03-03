@@ -1,6 +1,8 @@
 <template lang="html">
   <div id="places-filter">
     <navigation class="navigation-bar"></navigation>
+
+
     <h1>Spooky Filter</h1>
     <spooky-places-filter v-bind:spooky_places="foundPlaces"></spooky-places-filter>
     <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
@@ -95,12 +97,18 @@ export default {
       this.chosenPlace = chosenPlace
     })
 
+    eventBus.$on('close-more-info', () => {
+      this.chosenPlace = null;
+    })
+
   }
 }
 </script>
 
 <style lang="css" scoped>
-  #places-filter {
-    padding-top: 6rem;
-  }
+
+#places-filter {
+  padding-top: 6rem;
+}
+
 </style>
