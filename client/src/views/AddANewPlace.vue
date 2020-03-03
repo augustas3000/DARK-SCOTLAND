@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="add-a-new-place">
-    <navigation></navigation>
+    <navigation class="navigation-bar"></navigation>
     <h2>Add a new place</h2>
     <new-spooky-place-form></new-spooky-place-form>
   </div>

@@ -1,7 +1,7 @@
 <template lang="html">
 
     <div id="home">
-      <navigation></navigation>
+      <navigation class="navigation-bar"></navigation>
       <spooky-places-list v-if="spookyPlaces" v-bind:spooky_places="spookyPlaces"></spooky-places-list>
     </div>
 

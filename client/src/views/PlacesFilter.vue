@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="places-filter">
-    <navigation></navigation>
+    <navigation class="navigation-bar"></navigation>
     <h2>Places Filter</h2>
     <h1>Spooky Filter</h1>
     <spooky-places-filter v-bind:spooky_places="foundPlaces"></spooky-places-filter>

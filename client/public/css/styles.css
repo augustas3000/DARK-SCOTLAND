@@ -1,14 +1,41 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Arial, sans-serif;
 }
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 2rem;
+  /* background-color: #ecdfc8;
+  background-image: image(); */
+
+  /* background-image: url("../images/background-img.jpg");
+  background-size: cover;
+  background-position: center; */
+
+
+  /* color: var(--color-primary); */
+
+}
+
 
 #app {
   padding: 10px;
 }
 
-ul#spooky-places-list {
+/* ul#spooky-places-list {
   padding: 0;
   list-style: none;
   display: flex;
@@ -23,7 +50,7 @@ ul#spooky-places-list li {
 
 ul#spooky-places-list li .map {
   margin-top: 10px;
-}
+} */
 
 form div {
   margin-bottom: 10px;

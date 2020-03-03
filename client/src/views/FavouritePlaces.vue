@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="favourite-places">
-    <navigation></navigation>
+    <navigation class="navigation-bar"></navigation>
     <h2>Favourite Places</h2>
   </div>
 </template>

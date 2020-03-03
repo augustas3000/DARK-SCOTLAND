@@ -35,8 +35,9 @@ export default {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1.4rem 1.6rem;
     text-decoration: none;
+    font-size: 1.6rem;
   }
 
   li a:hover {
