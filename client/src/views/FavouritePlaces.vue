@@ -1,7 +1,9 @@
 <template lang="html">
   <div id="favourite-places">
     <navigation class="navigation-bar"></navigation>
-    <h2>Favourite Places</h2>
+    <div class="fav-palces-info">
+      <h2>Favourite Places</h2>
+    </div>
   </div>
 </template>
 
@@ -16,4 +18,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+  .fav-places-info {
+    /* margin-top: 8rem; */
+  }
+
 </style>

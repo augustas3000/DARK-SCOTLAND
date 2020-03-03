@@ -1,8 +1,28 @@
 <template lang="html">
   <div id="add-a-new-place">
     <navigation class="navigation-bar"></navigation>
-    <h2>Add a new place</h2>
-    <new-spooky-place-form></new-spooky-place-form>
+    <div class="add-a-new-place-container">
+      <h2>Add a new place</h2>
+      <new-spooky-place-form></new-spooky-place-form>
+
+      <!-- animation -->
+      <div class="halloween">
+          <div class="head">
+              <div class="skull">
+                  <div class="eyes">
+                      <div class="eye eye-left"></div>
+                      <div class="eye eye-right"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="body"></div>
+          <div class="legs"></div>
+      </div>
+    </div>
+
+
+    <!-- end of animation -->
+
   </div>
 </template>
 
@@ -21,4 +41,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+  .add-a-new-place-container {
+    padding-top: 6rem;
+  }
+
+
 </style>

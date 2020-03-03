@@ -29,6 +29,8 @@ export default {
 <style lang="css" scoped>
 
 .spooky-places-list {
+/* padding-top: 6rem;  */
+margin-top: 3rem;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 grid-gap: 3rem;
