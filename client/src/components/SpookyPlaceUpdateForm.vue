@@ -27,8 +27,8 @@
 
 
   <div class="">
-    <label for="price">Price:</label>
-    <input v-model="price" type="number" name="" id="price">
+    <label for="rating">Rating:</label>
+    <input v-model="rating" type="number" name="" id="rating">
   </div>
 
 <input type="submit" name="" value="Save and Update">
@@ -52,7 +52,7 @@ export default {
       locality: this.spooky_place_upd.locality,
       description: this.spooky_place_upd.description,
       imgURL: this.spooky_place_upd.imgURL,
-      price: this.spooky_place_upd.price
+      rating: this.spooky_place_upd.rating
     }
   },
   methods: {
@@ -68,7 +68,7 @@ export default {
         locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
-        price: this.price
+        rating: this.rating
       }
 
       SpookyServices.updateSpookyPlace(this.spooky_place_upd._id, updatedPlaceObjNoId)

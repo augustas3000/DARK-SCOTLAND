@@ -26,8 +26,8 @@
 
 
   <div class="">
-    <label for="price">Price:</label>
-    <input v-model="price" type="number" name="" id="price">
+    <label for="price">Rating:</label>
+    <input v-model="rating" type="number" name="" id="rating">
   </div>
 
 <input type="submit" name="" value="Add">
@@ -47,7 +47,7 @@ export default {
       locality: "",
       description: "",
       imgURL: "",
-      price: null
+      rating: null
     }
   },
   methods: {
@@ -57,7 +57,7 @@ export default {
         locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
-        price: parseFloat(this.price)
+        rating: parseFloat(this.rating)
       }
 
       SpookyServices.postSpookyPlace(newPlaceObj)

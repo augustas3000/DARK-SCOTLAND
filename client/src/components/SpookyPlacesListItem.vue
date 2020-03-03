@@ -3,10 +3,11 @@
   <li class="spooky-places-list-item">
     <spooky-place-update-form v-if="updFormShow" v-bind:spooky_place_upd="spooky_place"></spooky-place-update-form>
     <p>{{spooky_place.name}}</p>
-    <button type="button" name="button">More info</button>
+    <button v-on:click="moreInfo" type="button" name="button">More info</button>
     <button v-on:click="updButtonClicked" type="button" name="button">Update</button>
     <button v-on:click="deletePlace" type="button" name="button">Delete</button>
-    <spooky-places-list-item-mini-map v-bind:spooky_place="spooky_place"></spooky-places-list-item-mini-map>
+    <!-- <spooky-places-list-item-mini-map v-bind:spooky_place="spooky_place"></spooky-places-list-item-mini-map> -->
+    <img v-bind:src="spooky_place.imgURL" v-bind:alt="spooky_place.imgURL">
   </li>
 
 </template>
@@ -16,6 +17,7 @@ import SpookyServices from '../services/SpookyServices.js'
 import { eventBus } from '../main.js';
 import SpookyPlaceUpdateForm from './SpookyPlaceUpdateForm.vue'
 import SpookyPlacesListItemMiniMap from './SpookyPlacesListItemMiniMap.vue'
+
 
 export default {
   name: "spooky-places-list-item",
@@ -37,8 +39,17 @@ export default {
       .then(() => eventBus.$emit('spooky-place-deleted', this.spooky_place._id))
     },
 
+    // moreInfoClick() {
+    //   SpookyServices.moreInfoSpookyPlace(this.spooky_place._id)
+    //   .then(() => eventBus.$emit('spooky-place-info', this.spooky_place._id))
+    // },
+
     updButtonClicked() {
       this.updFormShow = true
+    },
+
+    moreInfo() {
+      eventBus.$emit('show-more-info', this.spooky_place)
     }
   },
 
@@ -54,5 +65,10 @@ export default {
   .spooky-places-list-item {
     min-height: 80px;
     background-color: lightgreen;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
   }
 </style>
