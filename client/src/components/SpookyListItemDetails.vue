@@ -43,8 +43,6 @@ export default {
 <style lang="css" scoped>
 
 .chosen-place-details {
-  /* border: 1px gray solid; */
-  /* margin-top: 4rem; */
   text-align: center;
   padding: 3rem;
   width: 93%;
@@ -73,7 +71,6 @@ export default {
 
 img {
 height: 30rem;
-/* max-width: 40%; */
 
 }
 
@@ -111,8 +108,5 @@ height: 30rem;
 .close:after {
   transform: rotate(-45deg);
 }
-
-
-
 
 </style>

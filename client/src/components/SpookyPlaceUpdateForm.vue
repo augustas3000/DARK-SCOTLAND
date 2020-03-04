@@ -55,7 +55,8 @@ export default {
       locality: this.spooky_place_upd.locality,
       description: this.spooky_place_upd.description,
       imgURL: this.spooky_place_upd.imgURL,
-      rating: this.spooky_place_upd.rating
+      rating: this.spooky_place_upd.rating,
+      isFavourite: this.spooky_place_upd.isFavourite
     }
   },
   methods: {
@@ -64,14 +65,14 @@ export default {
     },
 
     updateAndSave() {
-      // initialize a new object based on user's input to the upd form
-      // no db index yet
+
       const updatedPlaceObjNoId = {
         name: this.name,
         locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
-        rating: this.rating
+        rating: this.rating,
+        isFavourite: this.spooky_place_upd.isFavourite
       }
 
       SpookyServices.updateSpookyPlace(this.spooky_place_upd._id, updatedPlaceObjNoId)
@@ -81,8 +82,6 @@ export default {
     }
 
   }
-
-
 
   }
 

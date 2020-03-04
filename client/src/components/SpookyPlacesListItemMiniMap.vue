@@ -58,7 +58,7 @@ export default {
 },
 data() {
   return {
-    zoom: 6,
+    zoom: 5,
     center: latLng(56.859643, -4.192247),
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     attribution:
@@ -90,40 +90,10 @@ methods: {
   innerClick() {
     alert("Click!");
   }
-  // handleClickAddFav(index) {
-  //   eventBus.$emit('munro-added-to-fav', this.munros[index])
-  // },
-  // currentHighest() {
-  //   // let current_max = 0;
-  //   // let current_highest;
-  //   // return 'hello'
-  //   let current_highest = "";
-  //   let current_best_height = 0;
-  //
-  //   for (let munro of this.munros) {
-  //     if (munro.height > current_best_height) {
-  //       current_highest = munro.name
-  //       current_best_height = munro.height
-  //     }
-  //   }
-  //   return current_highest
-    // debugger;
-    // for (munro of this.munros) {
-    //   if (munro.height > current_max) {
-    //     current_max = munro.height
-    //     current_highest = munro
-    //   }
-    // }
-    // return current_highest
+
   }
 
-  // showDetails(munro) {
-  //   eventBus.$emit('show-details-selected-dd', munro)
-  // }
 }
-
-
-
 
 </script>
 

@@ -6,6 +6,8 @@
     <h1>Spooky Filter</h1>
     <spooky-places-filter v-bind:spooky_places="foundPlaces"></spooky-places-filter>
     <spooky-list-item-details v-if="chosenPlace" v-bind:chosen_place = "chosenPlace"></spooky-list-item-details>
+
+
     <spooky-places-list v-if="foundPlaces" v-bind:spooky_places="foundPlaces"></spooky-places-list>
     <spooky-places-list v-else-if="spookyPlacesSorted" v-bind:spooky_places="spookyPlacesSorted"></spooky-places-list>
   </div>

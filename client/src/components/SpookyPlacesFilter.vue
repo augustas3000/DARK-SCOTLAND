@@ -3,9 +3,7 @@
   <div class="filter">
     <div class="search-by-name">
       <label for="">Search by name</label>
-      <input v-model="placeSearchString" v-on:keyup="triggerSearch" type="text" name="search-input" value="" placeholder="Enter name">
-      <!-- <button v-on:click="triggerSearch" type="button" name="button">Action search</button> -->
-      <!-- <button v-on:click="stopSearch" type="button" name="button">Back to all</button> -->
+      <input v-on:keyup="triggerSearch" v-model="placeSearchString"  type="text" name="search-input" value="" placeholder="Enter name">
     </div>
 
     <div class="sort-by-rating">
@@ -30,14 +28,7 @@
       <button class="button" v-on:click="searchRefresh" type="button" name="button">Refresh</button>
     </div>
 
-
-
-
   </div>
-
-
-
-
 
 </template>
 
@@ -71,11 +62,12 @@ export default {
 
     filterPlaces() {
 
-     // if (this.placeSearchString) {
+     if (this.placeSearchString) {
          this.filteredPlaces = this.spooky_places.filter(place => {
      return place.name.toLowerCase().includes(this.placeSearchString.toLowerCase())
 
-   })},
+    })}
+    },
 
     sortByRatingBtnClicked() {
       eventBus.$emit('sort-by-rating')
@@ -88,13 +80,8 @@ export default {
     searchRefresh() {
       eventBus.$emit('filter-refresh')
     }
-   // }
  }
-
-
-  }
-
-
+}
 
 </script>
 

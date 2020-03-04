@@ -82,7 +82,8 @@ export default {
         locality: this.locality,
         description: this.description,
         imgURL: this.imgURL,
-        rating: parseFloat(this.rating)
+        rating: parseFloat(this.rating),
+        isFavourite: false
       }
 
       SpookyServices.postSpookyPlace(newPlaceObj)
@@ -144,27 +145,25 @@ export default {
 
 
 .ghost{
-  width: 250px;
-  height:300px;
+  width: 25rem;
+  height:30rem;
   position: fixed;
-  margin:140px auto;
-  margin-right: 120px;
-  margin-left: 560px;
+  margin-top:100px;
+  margin-bottom: 150px;
+  margin-right: 200px;
+  margin-left: 440px;
   animation: ghost_bottom_float 2.5s infinite;
   animation-fill-mode:both;
-
-
 }
-
 .ghost_head{
   width:100%;
   height:250px;
   border-radius:50% 50% 0 0;
   background-color:#fff;
   border: solid;
-  /* border-color: grey; */
+  border-width: 1.5px;
+  border-bottom: white;
 }
-
 .ghost_eye{
   position:absolute;
   width:25px;
@@ -173,16 +172,13 @@ export default {
   top:70px;
   background:#111;
 }
-
 .ghost_left_eye{
   left:70px;
   transform: scale(.70);
 }
-
 .ghost_right_eye{
   right:70px;
 }
-
 .ghost_smile{
   position:absolute;
   width:40px;
@@ -192,43 +188,33 @@ export default {
   top: 109px;
   left: 106px;
 }
-
 .ghost_bottom{
   width:100%;
   height:1px;
   background:#fff;
-  border: solid;
-  /* border-color: grey; */
+  border-bottom: white;
 }
-
 .ghost_floaty{
   width:20%;
   height:60px;
   background:#fff;
   float: left;
   border-radius:0 0 50% 50%;
-  border: solid;
-  /* border-color: grey; */
-
+  border-bottom: solid 5px black;
   animation: ghost_bottom_float 2.5s infinite;
-  animation-fill-mode:both;
+  animation-fill-mode: both;
 }
-
-
 @keyframes ghost_bottom_float {
   0% {
     transform: translateY(-30px);
   }
-
   50% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-30px);
   }
-
 }
-
 #ghost_floaty_1{
   animation-delay: .5s
 }
@@ -241,7 +227,6 @@ export default {
 #ghost_floaty_4{
   animation-delay: 2s
 }
-
 @keyframes ghost_body_float {
   0% {
     transform: translateY(-30px);
@@ -252,7 +237,6 @@ export default {
   100% {
     transform: translateY(-30px);
   }
-
 }
 
 

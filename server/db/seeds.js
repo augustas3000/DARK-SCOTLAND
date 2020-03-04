@@ -62,7 +62,7 @@ db.spookyPlaces.insertMany([
       },
       description: "Immortalised by Shakespeare in his play ‘Macbeth’, built around a holly tree and haunted by an apparition said to be the ghost of an heiress once kidnapped by one of the most powerful families in Scotland, Cawdor Castle lies in a peaceful location which belies its dramatic and intriguing past. Nestled in the heart of the old Highland county of Nairn, Cawdor Castle dates to the late fourteenth century and was home to the Thanes and later the Earls of Cawdor.",
       imgURL: "https://spookyscotland.net/wp-content/uploads/2018/02/cawdor-castle.jpg",
-      isFavourite: false,
+      isFavourite: true,
       rating: 7
     },
     {
@@ -110,7 +110,7 @@ db.spookyPlaces.insertMany([
       },
       description: "Dunnottar Castle near Stonehaven has been the scene of many dramatic chapters in Scotland’s history and is home to several ghosts. A girl dressed in a plaid dress has been seen in the brewery while a Scandinavian-looking man was spotted going into the guardroom.",
       imgURL: "https://www.visitscotland.com/blog/wp-content/uploads/2015/10/Dunnottar-Castle-Stonehaven-1200x800.jpg",
-      isFavourite: false,
+      isFavourite: true,
       rating: 6
     },
     {

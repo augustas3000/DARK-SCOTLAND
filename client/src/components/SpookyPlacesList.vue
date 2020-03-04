@@ -4,10 +4,6 @@
     <spooky-places-list-item v-for="(place, index) in spooky_places" v-bind:key="index" v-bind:spooky_place="place"></spooky-places-list-item>
   </ul>
 
-
-
-
-
 </template>
 
 <script>

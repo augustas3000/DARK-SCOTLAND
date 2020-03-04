@@ -22,17 +22,12 @@ export default {
   nav {
     border: 1px white solid;
     position: fixed;
-    /* width: 118.3rem; */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    /* background-color: #333; */
-    /* position: fixed; */
     top: 1rem;
     width: 93%;
     z-index: 10;
-    /* height: 30rem; */
-    /* padding-bottom: 10rem; */
   }
 
   ul {
@@ -41,7 +36,6 @@ export default {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  /* margin-top: 3rem; */
   }
 
   li {
