@@ -150,8 +150,8 @@ export default {
   position: fixed;
   margin-top:100px;
   margin-bottom: 150px;
-  margin-right: 200px;
-  margin-left: 440px;
+  margin-right: 100px;
+  margin-left: 700px;
   animation: ghost_bottom_float 2.5s infinite;
   animation-fill-mode:both;
 }

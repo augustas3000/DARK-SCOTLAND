@@ -15,7 +15,7 @@
 
       <div class="description-text-box">
         <h3>Description</h3>
-        <p>{{chosen_place.description}}</p>
+        <p class="description-text">{{chosen_place.description}}</p>
 
       </div>
   </div>
@@ -108,5 +108,13 @@ height: 30rem;
 .close:after {
   transform: rotate(-45deg);
 }
+
+/* description text  */
+
+.description-text {
+  /* font-weight: bold; */
+  font-size: 1.8rem;
+}
+
 
 </style>

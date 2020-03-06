@@ -7,6 +7,9 @@ const createRouter = function(collection) {
   const router = express.Router();
 
 
+
+// index route
+
   router.get('/', (req, res) => {
 
     collection
@@ -21,6 +24,7 @@ const createRouter = function(collection) {
   });
 
 
+// Show route
   router.get('/:id', (req, res) => {
   const id = req.params.id;
   collection
